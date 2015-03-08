@@ -180,6 +180,7 @@ pcl::RobotEyeGrabber::convertPacketData (unsigned char *data_packet, size_t leng
     {
       boost::uint32_t timestamp; // counts of a 66 MHz clock since power-on of eye.
       computeTimestamp(timestamp, data_packet + response_size);
+      point_cloud_xyzi_->header.stamp = timestamp;
       //std::cout << "Timestamp: " << timestamp << std::endl;
       offset = (response_size + sizeof(timestamp));
     }
