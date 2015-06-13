@@ -61,6 +61,7 @@ if(build)
         "include/pcl/${SUBSYS_NAME}/transformation_validation.h"
         "include/pcl/${SUBSYS_NAME}/transformation_validation_euclidean.h"
         "include/pcl/${SUBSYS_NAME}/gicp.h"
+        "include/pcl/${SUBSYS_NAME}/gicp_nonrigid.h"
         "include/pcl/${SUBSYS_NAME}/gicp6d.h"
         "include/pcl/${SUBSYS_NAME}/bfgs.h"
         "include/pcl/${SUBSYS_NAME}/warp_point_rigid.h"
@@ -111,6 +112,7 @@ if(build)
         "include/pcl/${SUBSYS_NAME}/impl/transformation_estimation_point_to_plane_weighted.hpp"
         "include/pcl/${SUBSYS_NAME}/impl/transformation_validation_euclidean.hpp"
         "include/pcl/${SUBSYS_NAME}/impl/gicp.hpp"
+        "include/pcl/${SUBSYS_NAME}/impl/gicp_nonrigid.hpp"
         "include/pcl/${SUBSYS_NAME}/impl/sample_consensus_prerejective.hpp"
         )
 
@@ -139,6 +141,7 @@ if(build)
         src/icp.cpp
         src/joint_icp.cpp
         src/gicp.cpp
+        src/gicp_nonrigid.cpp
         src/gicp6d.cpp
         src/icp_nl.cpp
         src/elch.cpp
